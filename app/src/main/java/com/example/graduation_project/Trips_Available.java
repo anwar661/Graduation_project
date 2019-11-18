@@ -1,11 +1,17 @@
 package com.example.graduation_project;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,7 +30,6 @@ public class Trips_Available extends AppCompatActivity {
     private RecyclerView recyclerView;
     private TripsAdapter adapter;
     private List<Trips_class> tripsList;
-
     DatabaseReference dbTrips;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +37,6 @@ public class Trips_Available extends AppCompatActivity {
         setContentView(R.layout.activity_trips__available);
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         dbTrips = database.getReference("Users");
-
-        // dbTrips = FirebaseDatabase.getInstance().getReference("Trips");
         Intent intent = getIntent();
         final String Region = intent.getStringExtra("Region");
         final String StartPoint = intent.getStringExtra("StartPoint");
@@ -89,11 +92,8 @@ public class Trips_Available extends AppCompatActivity {
                                                     trips_class.setCar(trips.cars.getCarTyps());
                                                     trips_class.setDriver_id(key);
                                                     trips_class.setTrip_id(trips.getTrip_id());
-
                                                     tripsList.add(trips_class);
                                                     adapter.notifyDataSetChanged();
-
-
                                                 }
                                             }
 
@@ -129,7 +129,6 @@ public class Trips_Available extends AppCompatActivity {
 
 
     }
-
 
 }
 

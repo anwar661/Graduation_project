@@ -17,8 +17,9 @@
         <item>East of Unaizah</item>
         <item>North of Unaizah</item>
         <item>South of Unaizah</item>
-        <item>North of Unaizah</item>
+        <item>West of Unaizah</item>
         <item>Alrass</item>
+        <item>Qussaim university</item>
     </string-array>
 
     <string-array name="TimetoGo">
@@ -34,32 +35,33 @@
     </string-array>
 
     <string-array name="AccessPoint">
-        <item>Qussaim university</item>
-        <item>King Abdullah Park</item>
-        <item>King Khalid Park</item>
-        <item>Al Busar Park</item>
-        <item>Al Othaim Mall</item>
-        <item>Rasheed Dome Market</item>
-        <item>Oasis Mall</item>
-        <item>Al Danube Supermarket</item>
+        <item>King Abdullah Park(Buraydah)</item>
+        <item>King Khalid Park(Buraydah)</item>
+        <item>AlBusar Park(Buraydah)</item>
+        <item>AlOthaim Mall(Buraydah)</item>
+        <item>Rasheed Dome Market(Buraydah)</item>
+        <item>Oasis Mall(Alrass)</item>
+        <item>AlDanube Supermarket(Unaizah)</item>
         <item>Unaizah Mall</item>
-        <item>Al Othaim Mall Unaizah</item>
-        <item>Ghada Park</item>
+        <item>AlOthaim Mall(Unaizah)</item>
+        <item>Ghada Park(Unaizah)</item>
         <item>Unaizah House for Folklores</item>
+        <item>Qussaim university</item>
     </string-array>
 
     <string-array name="Rallypoint">
-        <item>King Abdullah Park</item>
-        <item>King Khalid Park</item>
-        <item>Al Busar Park</item>
-        <item>Al Othaim Mall</item>
-        <item>Rasheed Dome Market</item>
-        <item>Oasis Mall</item>
-        <item>Al Danube Supermarket</item>
+        <item>King Abdullah Park(Buraydah)</item>
+        <item>King Khalid Park(Buraydah)</item>
+        <item>AlBusar Park(Buraydah)</item>
+        <item>AlOthaim Mall(Buraydah)</item>
+        <item>Rasheed Dome Market(Buraydah)</item>
+        <item>Oasis Mall(Alrass)</item>
+        <item>AlDanube Supermarket(Unaizah)</item>
         <item>Unaizah Mall</item>
-        <item>Al Othaim Mall Unaizah</item>
-        <item>Ghada Park</item>
+        <item>AlOthaim Mall(Unaizah)</item>
+        <item>Ghada Park(Unaizah)</item>
         <item>Unaizah House for Folklores</item>
+        <item>Qussaim university</item>
     </string-array>
 
     <string-array name="NumberofPassengers">

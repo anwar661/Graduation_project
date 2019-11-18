@@ -10,6 +10,7 @@ import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -47,7 +49,24 @@ public class Requests extends AppCompatActivity {
         query= FirebaseDatabase.getInstance().getReference("Requests");
         requestsAdapter=new RequestsAdapter(this);
         requests.setAdapter(requestsAdapter);
-
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.action_home:
+                        startActivity(new Intent(Requests.this,home_page.class));
+                        break;
+                    case R.id.action_req:
+                        startActivity(new Intent(Requests.this,Requests.class));
+                        break;
+                    case R.id.action_set:
+                        startActivity(new Intent(Requests.this,Setting.class));
+                        break;
+                }
+                return true;
+            }
+        });
 
 
     }
